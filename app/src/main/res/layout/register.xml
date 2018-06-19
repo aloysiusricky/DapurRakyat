@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<RelativeLayout
+    android:id="@+id/relative_layout_main"
+    android:focusableInTouchMode="true"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dr"
+    tools:context="com.dr.betadapurrakyat.MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/logo_view_bacground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Dapur Rakyat"
+        android:layout_marginLeft="25dp"
+        android:textSize="39dp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginBottom="10dp"
+
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/logo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Dapur Rakyat"
+        android:layout_marginLeft="25dp"
+        android:textSize="40dp"
+        android:fontFamily="cursive"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+
+        android:layout_alignParentTop="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/logo_view"
+        android:layout_margin="20dp"
+        android:id="@+id/linearLayout_register"
+        android:visibility="visible">
+
+
+
+        <EditText
+            android:id="@+id/fullName_textdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap :"
+            android:inputType="textCapWords"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:singleLine="true"
+
+            />
+
+        <EditText
+            android:id="@+id/phone_textdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="No Hp :"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:singleLine="true"
+            />
+        <EditText
+            android:id="@+id/password_textdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            />
+        <EditText
+            android:id="@+id/cPassword_textdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Konfirmasi Password"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="INFORMASI MEMBER"
+            android:textStyle="italic"
+
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        <EditText
+            android:id="@+id/userName_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama User :"
+            android:inputType="textCapWords"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/noID_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:hint="No KTP"
+            android:singleLine="true"
+            />
+
+        <EditText
+            android:id="@+id/alamat_textdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            android:hint="Alamat"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:minLines="1"
+            android:gravity="start"
+            android:textColor="@android:color/white"
+
+            android:textColorHint="@android:color/white" />
+        <EditText
+            android:id="@+id/kodepos_textdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:hint="Kode Pos :"
+            android:singleLine="true"
+            />
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="30dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Daftar"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>

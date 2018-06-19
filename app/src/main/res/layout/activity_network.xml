@@ -1,0 +1,96 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dr.betadapurrakyat.NetworkActivity">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout_net"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_net"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:subtitleTextColor="@android:color/white"
+            app:titleTextColor="@android:color/white">
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs_net"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryRed"
+            android:elevation="8dp">
+
+        </android.support.design.widget.TabLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:id="@+id/search_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/appBarLayout"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/search_editText_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Mencari"
+            android:singleLine="true"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/button_search_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorPrimaryRed"
+            android:text="cari"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_network_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation2_net"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation" />
+
+
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.dr.betadapurrakyat.HomeActivity"
+    tools:showIn="@layout/app_bar_home">
+
+    <RelativeLayout
+
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+
+                    <ProgressBar
+                        android:id="@+id/progresViewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:visibility="invisible" />
+
+
+                </RelativeLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager_slide_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@id/viewPager_slide_view"
+                    android:layout_alignLeft="@id/viewPager_slide_view"
+                    android:layout_marginBottom="10dp">
+
+                    <LinearLayout
+                        android:id="@+id/sliderIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/list_fresh"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_below="@id/relative_2"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimaryRed">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Bahan Pokok"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/recyclerview_fresh"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/list_fresh">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar_fresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="invisible" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/home_recycler_view_freshBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/strip_menu"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/recyclerview_fresh"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimaryRed" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#63c6c6c6"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Favorite"
+                android:textColor="@color/colorPrimaryRed"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/strip_menu">
+
+            <ProgressBar
+                android:id="@+id/progress_bar_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_recycler_favorite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/strip_menu">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/strip_menu"
+                 />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/list_menuBaru"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_below="@id/ll_recycler_favorite"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryRed">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Menu Harian"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recyclerview_menubaru"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/list_menuBaru">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="3dp"
+            android:paddingBottom="5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_recycler_view_NewMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/strip_MenuPesta"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/recyclerview_menubaru"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryRed" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#63c6c6c6"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Menu Pesta"
+            android:textColor="@color/colorPrimaryRed"
+
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/strip_MenuPesta"
+        android:padding="3dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_recycler_menuPesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/home_recycler_menuPesta"
+            android:layout_marginTop="25dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout></android.support.v4.widget.NestedScrollView>

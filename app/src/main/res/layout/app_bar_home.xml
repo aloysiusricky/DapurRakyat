@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dr.betadapurrakyat.HomeActivity">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark"
+                app:layout_scrollFlags="enterAlways"
+                app:contentInsetStartWithNavigation="0dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+                app:subtitleTextColor="@android:color/white"
+                app:titleTextColor="@android:color/white">
+
+            </android.support.v7.widget.Toolbar>
+            <RelativeLayout
+                android:id="@+id/search_bar_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:visibility="gone"
+                android:layout_below="@id/appBarLayout">
+
+                <RelativeLayout
+                    android:id="@+id/search_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/search_editText_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_toLeftOf="@+id/button_search_home"
+                        android:layout_toStartOf="@+id/button_search_home"
+                        android:hint="Cari Produk"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black" />
+
+                    <Button
+                        android:id="@+id/button_search_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/colorPrimaryRed"
+                        android:text="cari"
+                        android:textColor="@android:color/white" />
+
+
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/search_box">
+
+                </android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+
+        <include
+            layout="@layout/content_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            android:background="?android:attr/windowBackground"
+            app:menu="@menu/navigation" />
+
+</android.support.design.widget.CoordinatorLayout>

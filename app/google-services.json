@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "959994189819",
+    "firebase_url": "https://betadapurrakyat.firebaseio.com",
+    "project_id": "betadapurrakyat",
+    "storage_bucket": "betadapurrakyat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959994189819:android:9f1a172e4f03f2ad",
+        "android_client_info": {
+          "package_name": "com.dr.betadapurrakyat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959994189819-9ucn6fhbtdekj91vd3n1ihcgkgps7pai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dr.betadapurrakyat",
+            "certificate_hash": "969c98118b7be642436772a3d7a79248c30d9656"
+          }
+        },
+        {
+          "client_id": "959994189819-44ncaads6rdhpl2eor7u4di7t37l1oo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDE-85yIHyMlbPkJetJoqaJS9mZ4b6bng"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959994189819-44ncaads6rdhpl2eor7u4di7t37l1oo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

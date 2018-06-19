@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:paddingLeft="20dp"
+    android:paddingTop="15dp"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="vertical"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:id="@+id/lay_rel_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/circular_image_view"
+            android:padding="3dp">
+
+            <ImageView
+                android:id="@+id/imageView_Nav"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                />
+            <ImageView
+                android:id="@+id/add_image_drawer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_addimagewhite" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_view_name_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/lay_rel_img"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="Name User"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/textView_phone_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name_nav"
+            android:text="081916171021"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </RelativeLayout>
+
+</LinearLayout>

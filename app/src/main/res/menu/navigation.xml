@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="BERANDA" />
+
+    <item
+        android:id="@+id/navigation_newRelease"
+        android:icon="@drawable/ic_newrelease"
+        android:title="PROMO" />
+
+    <item
+        android:id="@+id/navigation_network"
+        android:icon="@drawable/ic_people"
+        android:title="JARINGAN" />
+
+</menu>

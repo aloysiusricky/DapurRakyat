@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="120dp"
+    android:layout_height="92dp">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp"
+                    >
+                <ImageView
+                    android:id="@+id/rBar_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ededed"
+                    android:scaleType="fitXY"
+                    />
+                    <TextView
+                        android:id="@+id/rbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/rBar_image"
+                        android:text="title"
+                        android:layout_alignParentRight="true"
+                        android:inputType="textCapWords"
+                        android:textColor="@android:color/black"
+                        android:paddingTop="1dp"
+                        android:paddingRight="8dp"
+                        android:textSize="12sp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="22dp"
+                        android:background="@drawable/rounded_shape"/>
+
+                    <ImageView
+                        android:id="@+id/rBar_play"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_play_white"
+                        android:visibility="invisible"/>
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+</RelativeLayout>

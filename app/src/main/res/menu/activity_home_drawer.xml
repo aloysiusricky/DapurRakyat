@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Pengaturan">
+        <menu>
+            <item
+                android:id="@+id/nav_template"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Template" />
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Profile" />
+        </menu>
+    </item>
+    <item android:title="Produk Fresh">
+        <menu>
+            <item
+                android:id="@+id/nav_fresh"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Fresh" />
+
+        </menu>
+    </item>
+
+
+    <item android:title="Product Menu">
+        <menu>
+
+        <item
+            android:id="@+id/nav_nusantara"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Menu Nusantara" />
+        <item
+            android:id="@+id/nav_oriental"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Menu Oriental" />
+        <item
+            android:id="@+id/nav_continental"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Menu Continental" />
+        <item
+            android:id="@+id/nav_pagi"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Menu Pagi" />
+        <item
+            android:id="@+id/nav_anak"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Menu Anak" />
+        <item
+            android:id="@+id/nav_pesta"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Menu Pesta" />
+        </menu>
+    </item>
+
+
+
+</menu>
